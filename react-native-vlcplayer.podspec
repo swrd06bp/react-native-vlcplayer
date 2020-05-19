@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.author       = { 'nghinv' => 'nghinv@lumibiz' }
   s.license      = 'MIT'
-  s.homepage     = 'https://github.com/Nghi-NV/react-native-vlcplayer'
-  s.source       = { :git => "https://github.com/Nghi-NV/react-native-vlcplayer.git" }
+  s.homepage     = 'https://github.com/swrd06bp/react-native-vlcplayer'
+  s.source       = { :git => "https://github.com/swrd06bp/react-native-vlcplayer.git" }
   s.source_files = 'ios/RCTVLCPlayer/*'
   s.platform     = :ios, "8.0"
   s.static_framework = true  
