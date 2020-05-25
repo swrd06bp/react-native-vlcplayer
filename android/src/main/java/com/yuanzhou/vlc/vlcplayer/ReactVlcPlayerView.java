@@ -1,5 +1,6 @@
 package com.yuanzhou.vlc.vlcplayer;
 
+import android.graphics.PixelFormat;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.AudioManager;
@@ -211,6 +212,8 @@ class ReactVlcPlayerView extends SurfaceView implements
             mMediaPlayer = new MediaPlayer(libvlc);
             mMediaPlayer.setEventListener(mPlayerListener);
             surfaceView = this;
+            surfaceView.setZOrderOnTop(true);
+            surfaceView.getHolder().setFormat(PixelFormat.TRANSPARENT);
             surfaceView.addOnLayoutChangeListener(onLayoutChangeListener);
             this.getHolder().setKeepScreenOn(true);
             IVLCVout vlcOut =  mMediaPlayer.getVLCVout();
